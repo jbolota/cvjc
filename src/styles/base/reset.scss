@@ -1,0 +1,91 @@
+@import '../abstracts/colors';
+
+.light {
+
+    .text {
+        color: $black;
+    }
+    .background {
+        background-color: $white;
+        width: 750px;
+        margin: auto;
+        margin-bottom: 5vh;
+    }
+    .label {
+        color: $white;
+        background-color: $black;
+        width: fit-content;
+        text-align: center;
+        margin-top: 4vh;
+        padding: 1vh;
+    }
+    
+    .flex{
+        display: flex;
+        &-child{
+          flex: 1;
+        }
+      }
+      .borderbottom{
+        border-bottom: 1px solid $black;
+      }
+      .bordertop{
+        border-top: 1px solid $black;
+      }
+      .techstack > * {
+        padding: 2vh;
+        color: $black
+    }
+    
+}
+
+.dark{
+  
+    background-color: $black;
+    .text{
+        color: $white;
+    }
+    .background {
+      width: 750px;
+      margin: auto;
+      margin-bottom: 5vh;
+  }
+    .label {
+        color: $black;
+        background-color: $white;
+        width: fit-content;
+        text-align: center;
+        margin-top: 4vh;
+        padding: 1vh;
+    }
+    .flex{
+        display: flex;
+        &-child{
+          flex: 1;
+        }
+      }
+      .borderbottom{
+        border-bottom: 1px solid $white;
+      }
+      .bordertop{
+        border-top: 1px solid $white;
+      }
+      .techstack > * {
+        padding: 2vh;
+        color: $white
+    }
+    
+    h2,h3,h5,p,span,a,li{
+      color: $white;
+    }
+}
+
+  .flex--vertical{
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    > .flex-child{
+      min-width: 100%;
+    }
+  }
+
